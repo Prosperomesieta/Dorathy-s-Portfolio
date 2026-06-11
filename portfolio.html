@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dorathy Ufot | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+<body>
+  
+  <div id="fade-wrapper"></div>
+
+  <div class="custom-cursor" id="customCursor">
+    <span class="cursor-text" id="cursorText"></span>
+  </div>
+
+  <div class="vignette"></div>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="close-menu-btn" id="closeMenuBtn">✕</button>
+    <a href="index.html">Home</a>
+    <a href="portfolio.html" class="active">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div id="main-content">
+    <nav>
+      <div class="logo">DU.</div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn">MENU</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <!-- FLOATING IMAGE FOR SCRIPT HOVER REVEAL -->
+    <div class="hover-reveal-img" id="hoverRevealImg">
+      <img src="" id="hoverRevealTarget" alt="Script Cover">
+      <div class="hover-reveal-label">Written by Dorathy</div>
+    </div>
+
+    <!-- PRODUCING: HORIZONTAL SCROLL -->
+    <div class="portfolio-title-wrapper sticky-title">
+      <div class="text-mask"><h1 class="slide-up section-title" style="border: none; font-size: 5rem; margin-bottom: 0;">Film Producing</h1></div>
+    </div>
+    
+    <div class="horizontal-scroll-wrapper">
+      <div class="sticky-container">
+        
+        <!-- NUDGE ARROW -->
+        <div class="scroll-nudge" id="scrollNudge">
+          <span>Scroll Down for Scripts</span>
+          <div class="arrow-down">↓</div>
+        </div>
+
+        <div class="horizontal-track" id="horizontalTrack">
+          
+          <a href="#" class="film-card cursor-hover-target tilt-effect" data-cursor-text="PLAY">
+            <img src="assets/film_trouble_1781142750934.png" alt="Trouble For Two">
+            <div class="film-info">
+              <span>Feature Film</span>
+              <h3>Trouble For Two</h3>
+            </div>
+          </a>
+
+          <a href="#" class="film-card cursor-hover-target tilt-effect" data-cursor-text="PLAY">
+            <img src="assets/film_kindling_1781142760591.png" alt="The Kindling Light">
+            <div class="film-info">
+              <span>Short Film</span>
+              <h3>The Kindling Light</h3>
+            </div>
+          </a>
+
+          <a href="#" class="film-card cursor-hover-target tilt-effect" data-cursor-text="PLAY">
+            <img src="assets/dorathy_placeholder_1781143515752.png" alt="Upcoming Project">
+            <div class="film-info">
+              <span>In Development</span>
+              <h3>Untitled Project</h3>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTWRITING: HOVER REVEAL LIST -->
+    <section class="scriptwriting-section">
+      <div class="text-mask"><h1 class="slide-up section-title">Scriptwriting</h1></div>
+      
+      <ul class="script-list">
+        <li class="script-item cursor-hover-target" data-hover-img="assets/youtube_hiphop_1781142770643.png" data-cursor-text="READ">
+          <div class="text-mask"><h2 class="slide-up">Hip-Hop Industry Secrets</h2></div>
+          <div class="text-mask"><span class="slide-up role">Documentary Script // Trap Lore Ross</span></div>
+        </li>
+        <li class="script-item cursor-hover-target" data-hover-img="assets/youtube_baseball_1781142787979.png" data-cursor-text="READ">
+          <div class="text-mask"><h2 class="slide-up">The Greatest Swing</h2></div>
+          <div class="text-mask"><span class="slide-up role">Sports Analysis // YouTube</span></div>
+        </li>
+        <li class="script-item cursor-hover-target" data-hover-img="assets/youtube_pop_1781142798240.png" data-cursor-text="READ">
+          <div class="text-mask"><h2 class="slide-up">Pop Culture Icons</h2></div>
+          <div class="text-mask"><span class="slide-up role">Deep Dive Documentary // Web</span></div>
+        </li>
+        <li class="script-item cursor-hover-target" data-hover-img="assets/youtube_vintage_1781142808657.png" data-cursor-text="READ">
+          <div class="text-mask"><h2 class="slide-up">Classic Hollywood</h2></div>
+          <div class="text-mask"><span class="slide-up role">Historical Script // Web</span></div>
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
