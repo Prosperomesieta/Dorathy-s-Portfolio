@@ -147,7 +147,7 @@ nav {
 .horizontal-scroll-wrapper { height: 300vh; position: relative; }
 .sticky-container { position: sticky; top: 0; height: 100vh; width: 100vw; overflow: hidden; display: flex; align-items: center; }
 .horizontal-track { display: flex; gap: 4rem; padding: 0 4rem; height: 65vh; will-change: transform; margin-left: 20vw; }
-.film-card { flex: 0 0 55vw; height: 100%; position: relative; overflow: hidden; cursor: none; perspective: 1000px; }
+.film-card { flex: 0 0 auto; aspect-ratio: 2/3; height: 100%; position: relative; overflow: hidden; cursor: none; perspective: 1000px; border-radius: 8px; }
 .film-card img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s; mix-blend-mode: luminosity; opacity: 0.8; }
 .film-card:hover img { transform: scale(1.05); mix-blend-mode: normal; opacity: 1; }
 .film-info { position: absolute; bottom: 0; left: 0; width: 100%; padding: 3rem; background: linear-gradient(transparent, rgba(26,25,23,0.9)); color: var(--text-color); pointer-events: none; }
@@ -178,7 +178,7 @@ nav {
   .about-hero-section h1 { font-size: 4rem; }
   .about-hero-section p.summary { font-size: 1.5rem; }
   .credit-row { grid-template-columns: 1fr; gap: 0.5rem; }
-  .film-card { flex: 0 0 85vw; } .horizontal-track { margin-left: 0; }
+  .film-card { flex: 0 0 85vw; height: auto; } .horizontal-track { margin-left: 0; align-items: center; }
   .sticky-title { position: relative; padding: 6rem 2rem 0; }
   .script-item h2 { font-size: 3rem; }
   .hover-reveal-img { display: none; }
