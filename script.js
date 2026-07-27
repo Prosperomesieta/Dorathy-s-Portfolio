@@ -177,4 +177,33 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // 9. VIDEO MODAL
+  const secretLivesTrigger = document.getElementById('secretLivesTrigger');
+  const videoModal = document.getElementById('videoModal');
+  const closeVideoBtn = document.getElementById('closeVideoBtn');
+  const trailerVideo = document.getElementById('trailerVideo');
+
+  if(secretLivesTrigger && videoModal && closeVideoBtn && trailerVideo) {
+    secretLivesTrigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      videoModal.classList.add('active');
+      trailerVideo.play();
+      lenis.stop();
+    });
+
+    closeVideoBtn.addEventListener('click', () => {
+      videoModal.classList.remove('active');
+      trailerVideo.pause();
+      lenis.start();
+    });
+
+    videoModal.addEventListener('click', (e) => {
+      if(e.target === videoModal) {
+        videoModal.classList.remove('active');
+        trailerVideo.pause();
+        lenis.start();
+      }
+    });
+  }
+
 });
