@@ -127,6 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
     };
     animateRevealImg();
 
+    // Preload images to remove hover lag
+    scriptItems.forEach(item => {
+      const imgSrc = item.getAttribute('data-hover-img');
+      if (imgSrc) {
+        const preload = new Image();
+        preload.src = imgSrc;
+      }
+    });
+
     scriptItems.forEach(item => {
       item.addEventListener('mouseenter', () => {
         const imgSrc = item.getAttribute('data-hover-img');
